@@ -1,0 +1,12 @@
+type Query {
+  films: [Film]
+  film(id: ID!): Film
+}
+
+type Film {
+  id: Int
+  name: String
+  year: Int
+  artwork: String
+  createdAt: String
+}
