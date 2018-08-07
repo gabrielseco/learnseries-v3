@@ -4,6 +4,7 @@
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
+    "lint": "tslint -t codeFrame 'src/**/*.ts'",
     "start": "ts-node src/main",
     "prestart:prod": "tsc",
     "start:prod": "node dist/main.js"

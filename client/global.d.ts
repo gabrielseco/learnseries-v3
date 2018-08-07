@@ -4,6 +4,6 @@ declare namespace NodeJS {
   }
 
   interface Global {
-    fetch: () => void
+    fetch: () => void;
   }
 }

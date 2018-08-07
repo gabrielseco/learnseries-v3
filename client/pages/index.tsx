@@ -11,9 +11,9 @@ const getFilms = gql`
       createdAt
     }
   }
-`
+`;
 
-export default () =>(
+export default () => (
   <Query query={getFilms}>
   {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>;
@@ -28,4 +28,4 @@ export default () =>(
       ));
     }}
   </Query>
-)
+);

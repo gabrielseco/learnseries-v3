@@ -11,7 +11,7 @@ import { FilmsModule } from './films/films.module';
 @Module({
   imports: [
     FilmsModule,
-    GraphQLModule
+    GraphQLModule,
   ],
 })
 export class ApplicationModule implements NestModule {
