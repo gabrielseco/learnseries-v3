@@ -15,7 +15,7 @@ export class FilmsService {
     return this.films;
   }
 
-  findOneById(id: number): Film {
+  findOneById(id: number): Film | undefined {
     return this.films.find(film => film.id === id);
   }
 }

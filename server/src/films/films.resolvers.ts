@@ -16,7 +16,7 @@ export class FilmsResolvers {
   }
 
   @Query('film')
-  async findOneById(_, args): Promise<Film> {
+  async findOneById(_: any, args: { id: number}): Promise<Film> {
     const { id } = args;
     return await this.filmsService.findOneById(+id);
   }
