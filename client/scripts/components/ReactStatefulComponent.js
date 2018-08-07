@@ -43,9 +43,9 @@ class ReactStatefulComponent extends Component {
 
   defaultReactJS(component) {
     return `
-      import React, { Component } from 'react'
+      import * as React from 'react'
 
-      class ${component} extends Component {
+      class ${component} extends React.Component {
         constructor(props) {
           super(props);
           this.state = {};

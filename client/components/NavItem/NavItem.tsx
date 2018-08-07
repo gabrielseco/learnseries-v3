@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 const NavItem = ({ children, URL }: { children: string, URL: string}) => (
   <li>

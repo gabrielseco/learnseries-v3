@@ -42,7 +42,7 @@ class ReactStatelessComponent extends Component {
 
   defaultReactComponent(component) {
     return `
-      import React from 'react';
+      import * as React from 'react';
       
       const ${component} = () => (
         <div>

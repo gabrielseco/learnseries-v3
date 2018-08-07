@@ -6,6 +6,7 @@ export const getFilms = gql`
       id,
       name,
       artwork,
+      year,
       createdAt
     }
   }

@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { Header } from 'components';
 
-const Layout = (props) => (
+const Layout = (props: {children: React.ReactNode}) => (
   <React.Fragment>
     <Header/>
     {props.children}

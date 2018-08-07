@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Film } from './interfaces/film.interface';
+import { Film } from './../../../shared/types';
 import FilmsData from './films.data';
 
 @Injectable()

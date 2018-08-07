@@ -1,4 +1,4 @@
-import { Film } from './interfaces/film.interface';
+import { Film } from './../../../shared/types';
 
 const FilmsData: Film[] = [
   {

@@ -4,11 +4,11 @@ import Head from 'next/head';
 import { getDataFromTree } from 'react-apollo';
 import { ApolloClient, NormalizedCacheObject } from 'apollo-boost';
 
-export default (App) => {
+export default (App: any) => {
   return class Apollo extends React.Component {
     apolloClient: ApolloClient<NormalizedCacheObject>;
     static displayName = 'withApollo(App)';
-    static async getInitialProps(ctx) {
+    static async getInitialProps(ctx: any) {
       const { Component, router } = ctx;
 
       let appProps = {};
@@ -51,7 +51,7 @@ export default (App) => {
       };
     }
 
-    constructor(props) {
+    constructor(props: any) {
       super(props);
       this.apolloClient = initApollo(props.apolloState);
     }

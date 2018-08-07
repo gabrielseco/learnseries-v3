@@ -3,7 +3,7 @@ import {
   Resolver,
 } from '@nestjs/graphql';
 
-import { Film } from './interfaces/film.interface';
+import { Film } from './../../../shared/types';
 import { FilmsService } from './films.service';
 
 @Resolver('Film')

@@ -1,44 +1,44 @@
 const env = require('./env-config');
 
 const presets = [
-  "next/babel",
-  "@zeit/next-typescript/babel"
+  'next/babel',
+  '@zeit/next-typescript/babel'
 ];
 
 const presetsTesting = [
   [
-    "next/babel",
+    'next/babel',
     {
-      "preset-env": {
-        "modules": "commonjs"
+      'preset-env': {
+        'modules': 'commonjs'
       }
     }
   ],
-  "@zeit/next-typescript/babel"
+  '@zeit/next-typescript/babel'
 ];
 
 const plugins = [
   [
-    "styled-components", 
+    'styled-components', 
     {
-      "ssr": true,
-      "displayName": true,
-      "preprocess": false
+      'ssr': true,
+      'displayName': true,
+      'preprocess': false
     }
   ],
   [
-    "transform-define", env
+    'transform-define', env
   ],
   [
-    "module-resolver",
+    'module-resolver',
     {
-      root: ["./"],
+      root: ['./'],
       alias: {
-        components: "./components",
-        containers: "./containers",
-        globals: "./globals",
-        shared: "./shared",
-        utils: "./utils"
+        components: './components',
+        containers: './containers',
+        globals: './globals',
+        shared: './shared',
+        utils: './utils',
       }
     }
   ]

@@ -3,14 +3,14 @@ import { HttpLink } from 'apollo-boost';
 import { InMemoryCache } from 'apollo-boost';
 import fetch from 'isomorphic-unfetch';
 
-let apolloClient;
+let apolloClient: ApolloClient<NormalizedCacheObject>;
 
 // Polyfill fetch() on the server (used by apollo-client)
 if (!process.browser) {
   global.fetch = fetch;
 }
 
-function create(initialState) {
+function create(initialState = {}) {
   return new ApolloClient({
     connectToDevTools: process.browser,
     ssrMode: !process.browser, // Disables forceFetch on the server (so queries are only run once)
