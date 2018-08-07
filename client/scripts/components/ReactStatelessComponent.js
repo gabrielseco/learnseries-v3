@@ -12,20 +12,32 @@ class ReactStatelessComponent extends Component {
       parser: new TypescriptDefaultParser()
     };
 
+    const tsStylingType = {
+      fileExtension: '.style.ts',
+      parser: new TypescriptDefaultParser()
+    }
+
     const tsxType = {
       fileExtension: '.tsx',
       parser: new TypescriptDefaultParser()
     }
 
     const specType = {
-      fileExtension: '.spec.ts',
+      fileExtension: '.spec.tsx',
       parser: new TypescriptDefaultParser()
     };
 
     const componentFolder = this.getComponentFolder();
     this.add(tsxType, this.defaultReactComponent(componentFolder));
+    this.add(tsStylingType, this.defaultStyling());
     this.add(specType, this.defaultSpec(componentFolder));
     this.add(tsType, this.defaultIndex(componentFolder), 'index');
+  }
+
+  defaultStyling() {
+    return `
+      import styled from 'styled-components';
+    `;
   }
 
   defaultReactComponent(component) {

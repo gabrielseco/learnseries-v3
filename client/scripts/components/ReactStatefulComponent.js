@@ -12,21 +12,33 @@ class ReactStatefulComponent extends Component {
       parser: new TypescriptDefaultParser()
     };
 
+    const tsStylingType = {
+      fileExtension: '.style.ts',
+      parser: new TypescriptDefaultParser()
+    }
+
     const tsxType = {
       fileExtension: '.tsx',
       parser: new TypescriptDefaultParser()
     }
 
     const specTsType = {
-      fileExtension: '.spec.ts',
+      fileExtension: '.spec.tsx',
       parser: new TypescriptDefaultParser()
     };
 
     const componentFolder = this.getComponentFolder();
 
     this.add(tsType, this.defaultReactIndex(componentFolder), 'index');
+    this.add(tsStylingType, this.defaultStyling());
     this.add(tsxType, this.defaultReactJS(componentFolder));
     this.add(specTsType, this.defaultReactSpec(componentFolder));
+  }
+
+  defaultStyling() {
+    return `
+      import styled from 'styled-components';
+    `;
   }
 
   defaultReactJS(component) {
