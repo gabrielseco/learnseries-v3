@@ -1,17 +1,17 @@
 const env = require('./env-config');
 
 module.exports = {
-  presets: [
+  "presets": [
     "next/babel",
     "@zeit/next-typescript/babel"
   ],
-  plugins: [
+  "plugins": [
     [
       "styled-components", 
       {
-        ssr: true,
-        displayName: true,
-        preprocess: false
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
       }
     ],
     [
@@ -20,13 +20,13 @@ module.exports = {
     [
       "module-resolver",
       {
-        root: ["./"],
-        alias: {
-          components: "./components",
-          containers: "./containers",
-          globals: "./globals",
-          shared: "./shared",
-          utils: "./utils"
+        "root": ["./"],
+        "alias": {
+          "components": "./components",
+          "containers": "./containers",
+          "globals": "./globals",
+          "shared": "./shared",
+          "utils": "./utils"
         }
       }
     ]
