@@ -15,10 +15,9 @@ const getFilms = gql`
 
 export default () => (
   <Query query={getFilms}>
-  {({ loading, error, data }) => {
+    {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>;
       if (error) return <p>Error :(</p>;
-
       return data.films.map(({ id, name, artwork, createdAt }) => (
         <div key={id}>
           <img src={artwork} alt={name} />

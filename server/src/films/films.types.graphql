@@ -3,6 +3,7 @@ type Query {
   film(id: ID!): Film
 }
 
+# Film type
 type Film {
   id: Int
   name: String

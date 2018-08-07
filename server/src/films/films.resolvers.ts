@@ -16,8 +16,13 @@ export class FilmsResolvers {
   }
 
   @Query('film')
-  async findOneById(_: any, args: { id: number}): Promise<Film> {
+  async findOneById(_: any, args: { id: string}): Promise<Film> {
     const { id } = args;
-    return await this.filmsService.findOneById(+id);
+    const film = await this.filmsService.findOneById(parseInt(id, 10));
+    if (film !== undefined) {
+      return film;
+    } else {
+      throw new Error('Film is not found');
+    }
   }
 }
