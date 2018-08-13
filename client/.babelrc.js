@@ -34,11 +34,12 @@ const plugins = [
     {
       root: ['./'],
       alias: {
-        components: './components',
-        containers: './containers',
-        globals: './globals',
-        shared: './shared',
-        utils: './utils',
+        components: './src/components',
+        config: './src/config',
+        containers: './src/containers',
+        globals: './src/globals',
+        shared: './src/shared',
+        utils: './src/utils',
       }
     }
   ]

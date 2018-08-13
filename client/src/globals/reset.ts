@@ -40,6 +40,6 @@ img {
 h2 {
   font-size: 2rem;
 }
-`
+`;
 
-export default resetCss
+export default resetCss;
