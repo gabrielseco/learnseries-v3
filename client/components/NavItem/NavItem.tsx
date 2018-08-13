@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { Anchor } from './NavItem.style';
 
 const NavItem = ({ children, URL }: { children: string, URL: string}) => (
   <li>
-    <a href={URL}>{children}</a>
+    <Anchor href={URL}>{children}</Anchor>
   </li>
 );
 

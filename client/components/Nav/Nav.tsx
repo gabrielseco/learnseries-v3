@@ -1,10 +1,11 @@
 import * as React from 'react';
+import { NavigationList } from './Nav.style';
 
 const Nav = (props: { children: React.ReactNode}) => (
   <nav>
-    <ul>
+    <NavigationList>
       {props.children}
-    </ul>
+    </NavigationList>
   </nav>
 );
 
