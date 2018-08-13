@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   top: 0;
   width: 100%;
   z-index: 2;
-`;
+`
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -16,4 +16,4 @@ export const Container = styled.div`
   max-width: 71.25em;
   padding: 0.625em 2.5em;
   position: relative;
-`;
+`

@@ -2,7 +2,6 @@
   "name": "learn-series-v3",
   "version": "1.0.0",
   "scripts": {
-    "lint": "tslint -t codeFrame 'src/**/*.ts'",
     "dev": "next",
     "build": "next build",
     "start": "next start",

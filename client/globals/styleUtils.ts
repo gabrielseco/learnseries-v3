@@ -1,11 +1,11 @@
-import { css } from 'styled-components';
+import { css } from 'styled-components'
 
 const sizes = {
   giant: 1200,
   large: 900,
   medium: 600,
-  small: 320,
-};
+  small: 320
+}
 
 interface IMedia {
   small: (query: TemplateStringsArray) => TemplateStringsArray;
@@ -20,6 +20,6 @@ export const media: IMedia = Object.keys(sizes).reduce((accumulator, label) => {
     @media (min-width: ${emSize}em) {
       ${css(args as any)}
     }
-  `;
-  return accumulator;
-}, {} as IMedia);
+  `
+  return accumulator
+}, {} as IMedia)

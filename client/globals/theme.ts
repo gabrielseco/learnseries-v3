@@ -3,4 +3,4 @@ export const theme = {
   headerBackground: '#111111',
   backgroundContact: '#0c0c0c',
   white: 'white',
-};
+}

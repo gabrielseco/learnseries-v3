@@ -12,4 +12,4 @@ export const Anchor = styled.a`
     border-bottom: 2px rgba(0, 0, 0, 0.8);
     padding-bottom: 1.25em;
   }
-`;
+`
