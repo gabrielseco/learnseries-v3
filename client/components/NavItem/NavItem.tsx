@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Anchor } from './NavItem.style';
+import { Anchor, NavigationItem } from './NavItem.style';
 
 const NavItem = ({ children, URL }: { children: string, URL: string}) => (
-  <li>
+  <NavigationItem>
     <Anchor href={URL}>{children}</Anchor>
-  </li>
+  </NavigationItem>
 );
 
 export default NavItem;

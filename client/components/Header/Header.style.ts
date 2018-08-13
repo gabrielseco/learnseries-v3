@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from 'globals/styleUtils';
 
 export const Wrapper = styled.div`
   background: #ffffff;
@@ -8,12 +9,17 @@ export const Wrapper = styled.div`
   top: 0;
   width: 100%;
   z-index: 2;
-`
+`;
 
 export const Container = styled.div`
   margin: 0 auto;
   min-width: 70em;
   max-width: 71.25em;
-  padding: 0.625em 2.5em;
+  padding: 0.625em 0.5em;
   position: relative;
-`
+
+  ${media.medium`
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  `}
+`;

@@ -5,7 +5,6 @@ import { Wrapper, Container } from './Header.style';
 const Header = () => (
   <Wrapper>
     <Container>
-      <h3>LearnSeries</h3>
       <Nav>
         <NavItem URL='#'>Films</NavItem>
         <NavItem URL='#'>TV</NavItem>

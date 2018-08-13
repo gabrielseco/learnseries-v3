@@ -30,6 +30,7 @@ h6 {
 }
 
 ul {
+  margin: 0;
   padding-left: 0;
 }
 
@@ -40,6 +41,11 @@ img {
 h2 {
   font-size: 2rem;
 }
-`
 
-export default resetCss
+
+a {
+  text-decoration: none;
+}
+`;
+
+export default resetCss;
