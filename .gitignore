@@ -14,9 +14,10 @@ npm-debug.log
 
 # tests
 /test
-/coverage
+/**/coverage
 /.nyc_output
 
 # dist
 .next
 .DS_Store
+**/dist

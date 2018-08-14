@@ -1,5 +1,5 @@
 import App, {Container} from 'next/app';
-import * as React from 'react';
+import React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import withApolloClient from '../lib/with-apollo-client';
 

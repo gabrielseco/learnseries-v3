@@ -1,10 +1,14 @@
-import * as React from 'react';
+import React from 'react';
 import { NavigationList } from './Nav.style';
 
-const Nav = (props: { children: React.ReactNode}) => (
+interface NavItemsProps {
+  children: React.ReactNode;
+}
+
+const Nav: React.SFC<NavItemsProps> = ({ children }) => (
   <nav>
     <NavigationList>
-      {props.children}
+      {children}
     </NavigationList>
   </nav>
 );

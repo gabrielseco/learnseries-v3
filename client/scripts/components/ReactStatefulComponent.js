@@ -43,7 +43,7 @@ class ReactStatefulComponent extends Component {
 
   defaultReactJS(component) {
     return `
-      import * as React from 'react'
+      import React from 'react'
 
       class ${component} extends React.Component {
         constructor(props) {

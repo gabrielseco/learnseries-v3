@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Nav, NavItem } from 'components';
 import { Wrapper, Container } from './Header.style';
 

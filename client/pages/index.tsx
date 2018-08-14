@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Query } from 'react-apollo';
 import { Layout } from 'containers';
 import { getFilms } from 'globals/queries';

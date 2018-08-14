@@ -1,7 +1,12 @@
-import * as React from 'react';
+import React from 'react';
 import { Anchor, NavigationItem } from './NavItem.style';
 
-const NavItem = ({ children, URL }: { children: string, URL: string}) => (
+interface NavItemProps {
+  children: string;
+  URL: string;
+}
+
+const NavItem: React.SFC<NavItemProps> = ({  children, URL }) => (
   <NavigationItem>
     <Anchor href={URL}>{children}</Anchor>
   </NavigationItem>
