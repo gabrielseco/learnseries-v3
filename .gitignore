@@ -13,7 +13,7 @@ npm-debug.log
 /quick-start
 
 # tests
-/test
+/**/test
 /**/coverage
 /.nyc_output
 
@@ -21,4 +21,7 @@ npm-debug.log
 .next
 .DS_Store
 **/dist
+
+# env
 client/env-config.js
+.env

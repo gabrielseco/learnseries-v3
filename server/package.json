@@ -14,13 +14,18 @@
     "@nestjs/core": "^5.1.0",
     "@nestjs/graphql": "^3.0.0",
     "apollo-server-express": "^1.2.0",
+    "dotenv": "^6.0.0",
     "graphql": "^0.11.7",
     "graphql-tools": "^2.11.0",
+    "mysql": "^2.16.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.0.0",
+    "typeorm": "^0.2.7",
     "typescript": "^2.8.0"
   },
   "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^10.7.0",
     "ts-node": "^6.0.0",
     "tslint": "^5.9.1"
   }
