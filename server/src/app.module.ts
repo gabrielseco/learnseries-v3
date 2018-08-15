@@ -1,23 +1,14 @@
-import {
-  Module,
-  MiddlewareConsumer,
-  NestModule,
-} from '@nestjs/common';
+import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { GraphQLModule, GraphQLFactory } from '@nestjs/graphql';
 
-import { FilmsModule } from './films/films.module';
+import { FilmModule } from './film/film.module';
 
 @Module({
-  imports: [
-    FilmsModule,
-    GraphQLModule,
-  ],
+  imports: [FilmModule, GraphQLModule]
 })
 export class ApplicationModule implements NestModule {
-  constructor(
-    private readonly graphQLFactory: GraphQLFactory,
-  ) {}
+  constructor(private readonly graphQLFactory: GraphQLFactory) {}
 
   configure(consumer: MiddlewareConsumer) {
     const schema = this.createSchema();
@@ -25,8 +16,8 @@ export class ApplicationModule implements NestModule {
     consumer
       .apply(
         graphiqlExpress({
-          endpointURL: '/graphql',
-        }),
+          endpointURL: '/graphql'
+        })
       )
       .forRoutes('/graphiql')
       .apply(graphqlExpress(req => ({ schema, rootValue: req })))

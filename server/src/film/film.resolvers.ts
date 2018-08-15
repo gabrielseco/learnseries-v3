@@ -1,11 +1,11 @@
 import { Query, Resolver } from '@nestjs/graphql';
 
 import { Film } from './../../../shared/types';
-import { FilmsService } from './films.service';
+import { FilmService } from './film.service';
 
 @Resolver('Film')
-export class FilmsResolvers {
-  constructor(private readonly filmsService: FilmsService) {}
+export class FilmResolvers {
+  constructor(private readonly filmsService: FilmService) {}
 
   @Query('films')
   async getFilms() {
