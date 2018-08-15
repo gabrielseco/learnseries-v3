@@ -21,3 +21,4 @@ npm-debug.log
 .next
 .DS_Store
 **/dist
+client/env-config.js
