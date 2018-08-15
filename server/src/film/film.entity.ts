@@ -7,7 +7,7 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class Film {
+export class FilmEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -24,7 +24,7 @@ export class Film {
   artwork: string;
 
   @Column({ length: 10, nullable: true })
-  color: string;
+  colour: string;
 
   @Column({ nullable: true })
   idMovieDB: number;

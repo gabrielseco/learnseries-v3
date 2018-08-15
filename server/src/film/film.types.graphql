@@ -1,13 +1,18 @@
 type Query {
   films: [Film]
   film(id: ID!): Film
+  migrationFilm: [Film]
 }
 
 # Film type
 type Film {
   id: Int
   name: String
+  overview: String
+  colour: String
   year: Int
   artwork: String
+  idMovieDB: Int
   createdAt: String
+  updatedAt: String 
 }

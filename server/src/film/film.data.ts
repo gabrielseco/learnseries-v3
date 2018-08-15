@@ -1,41 +1,65 @@
-import { Film } from './../../../shared/types';
+import { IMigrationFilm } from './migrations/migration-film.interface';
 
-const FilmsData: Film[] = [
+const FilmsData: IMigrationFilm[] = [
   {
-     id: 57,
-     name: 'A Thousand Words',
-     year: 2012,
-     artwork: 'https://image.tmdb.org/t/p/w185//4T0nPirZLeLEaXOgLT7SGgopCui.jpg',
-     createdAt: '9/8/2015',
+    id: 1,
+    nombre: 'The First Time',
+    overview: '',
+    imagen:
+      'https://yts.ag/assets/images/movies/The_First_Time_2012/medium-cover.jpg',
+    year: 2012,
+    idMovieDB: 0,
+    color: 'NULL',
+    createdAt: '2016-01-15 18:23:31',
+    updatedAt: '2016-01-15 18:23:31'
   },
   {
-    id: 63,
-    name: 'Almost Famous',
-    year: 2000,
-    artwork: 'https://image.tmdb.org/t/p/w185//9pNo92j6zSEAUB8pNmcJTkpnkBF.jpg',
-    createdAt: '9/12/2015',
-  },
-  {
-    id: 54,
-    name: 'American Beauty',
-    year: 1999,
-    artwork: 'https://image.tmdb.org/t/p/w185//or1MP8BZIAjqWYxPdPX724ydKar.jpg',
-    createdAt: '9/4/2015',
+    id: 6,
+    nombre: 'Catch Me If You Can',
+    overview: '',
+    imagen:
+      'https://yts.ag/assets/images/movies/Catch_Me_If_You_Can_2002/medium-cover.jpg',
+    year: 2002,
+    idMovieDB: 0,
+    color: 'NULL',
+    createdAt: '2016-01-15 18:23:31',
+    updatedAt: '2016-01-15 18:23:31'
   },
   {
     id: 8,
-    name: 'Birdman',
+    nombre: 'Birdman',
+    overview: '',
+    imagen:
+      'https://a.ltrbxd.com/resized/film-poster/1/3/9/7/9/5/139795-birdman-0-230-0-345-crop.jpg?k=d73729f573',
     year: 2014,
-    artwork: 'http://s.ynet.io/assets/images/movies/birdman_2014/medium-cover.jpg',
-    createdAt: '2/22/2015',
+    idMovieDB: 0,
+    color: 'NULL',
+    createdAt: '2016-01-15 18:23:31',
+    updatedAt: '2016-01-15 18:23:31'
   },
   {
-    id: 50,
-    name: 'Blended',
-    year: 2014,
-    artwork: 'https://image.tmdb.org/t/p/w185/l99PKd9tdwtpOS5jxHwDGKTsVUo.jpg',
-    createdAt: '8/12/2015',
+    id: 9,
+    nombre: 'The Wolf of Wall Street',
+    overview: '',
+    imagen:
+      'https://yts.ag/assets/images/movies/The_Wolf_of_Wall_Street_2013/medium-cover.jpg',
+    year: 2013,
+    idMovieDB: 0,
+    color: 'NULL',
+    createdAt: '2016-01-15 18:23:31',
+    updatedAt: '2016-01-15 18:23:31'
   },
+  {
+    id: 10,
+    nombre: 'Mary Poppins',
+    overview: '',
+    imagen: 'https://image.tmdb.org/t/p/w185/hZ0sJFrhfBxRyEpF0fKpVuaFUCJ.jpg',
+    year: 1964,
+    idMovieDB: 0,
+    color: 'NULL',
+    createdAt: '2016-01-15 18:23:31',
+    updatedAt: '2016-01-15 18:23:31'
+  }
 ];
 
 export default FilmsData;
