@@ -1,5 +1,8 @@
 /* eslint-disable */
-const { Component, TypescriptDefaultParser } = require('genmite');
+const {
+  Component,
+  TypescriptDefaultParser
+} = require('genmite');
 
 class ReactStatelessComponent extends Component {
   constructor(destinationFolder, componentFolder, config) {
@@ -44,7 +47,7 @@ class ReactStatelessComponent extends Component {
     return `
       import React from 'react';
       
-      const ${component} = () => (
+      const ${component}: React.SFC<{prop1: any}> = () => (
         <div>
           <h2>${component} Stateful Component generated from genmite</h2>
         </div>
