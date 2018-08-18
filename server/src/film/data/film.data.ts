@@ -1,4 +1,4 @@
-import { IMigrationFilm } from './migrations/migration-film.interface';
+import { IMigrationFilm } from './../migrations/migration-film.interface';
 
 const FilmsData: IMigrationFilm[] = [
   {

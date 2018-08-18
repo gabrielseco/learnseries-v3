@@ -1,12 +1,11 @@
 import { Connection, Repository } from 'typeorm';
-import { FilmEntity } from './film.entity';
+import { Film } from './entities/film.entity';
 import { Constants } from '../constants';
 
 export const filmProviders = [
   {
     provide: Constants.FilmRepositoryToken,
-    useFactory: (connection: Connection) =>
-      connection.getRepository(FilmEntity),
+    useFactory: (connection: Connection) => connection.getRepository(Film),
     inject: [Constants.DbConnectionToken]
   }
 ];

@@ -1,10 +1,9 @@
 import { Query, Resolver } from '@nestjs/graphql';
 
-import { Film } from './../../../shared/types';
-import { FilmService } from './film.service';
+import { IFilm } from './../../../shared/types';
+import { FilmService, FilmMigrationService } from './services';
 import { FilmMigration } from './migrations/main';
-import FilmsData from './film.data';
-import { FilmMigrationService } from './film-migration.service';
+import FilmsData from './data/film.data';
 
 @Resolver('Film')
 export class FilmResolvers {
@@ -19,7 +18,7 @@ export class FilmResolvers {
   }
 
   @Query('film')
-  async findOneById(_: any, args: { id: string }): Promise<Film> {
+  async findOneById(_: any, args: { id: string }): Promise<IFilm> {
     const { id } = args;
     const film = await this.filmService.findOneById(parseInt(id, 10));
     if (film !== undefined) {

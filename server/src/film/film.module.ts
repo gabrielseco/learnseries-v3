@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
-import { FilmService } from './film.service';
-import { FilmMigrationService } from './film-migration.service';
+import { FilmService, FilmMigrationService } from './services';
 import { FilmResolvers } from './film.resolvers';
 import { DatabaseModule } from '../database/database.module';
 import { filmProviders } from './film.providers';

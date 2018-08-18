@@ -1,14 +1,14 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
-import { Constants } from '../constants';
-import { FilmEntity } from './film.entity';
-import { MigrationFilm } from './migrations/migration-film.model';
+import { Constants } from '../../constants';
+import { Film } from './../entities/film.entity';
+import { MigrationFilm } from './../migrations/migration-film.model';
 
 @Injectable()
 export class FilmMigrationService {
   constructor(
     @Inject(Constants.FilmRepositoryToken)
-    private readonly filmRepository: Repository<FilmEntity>
+    private readonly filmRepository: Repository<Film>
   ) {}
 
   async insert(migrationFilm: MigrationFilm) {

@@ -1,6 +1,6 @@
 import { IMigrationFilm } from './migration-film.interface';
 import { MigrationFilm } from './migration-film.model';
-import { FilmMigrationService } from '../film-migration.service';
+import { FilmMigrationService } from './../services';
 
 export class FilmMigration {
   data: IMigrationFilm[];

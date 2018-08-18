@@ -1,7 +1,7 @@
 import { IMigrationFilm } from './migration-film.interface';
-import { Film } from '../../../../shared/types';
+import { IFilm } from '../../../../shared/types';
 
-export class MigrationFilm implements Film {
+export class MigrationFilm implements IFilm {
   id: number;
   name: string;
   overview?: string;
