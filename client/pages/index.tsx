@@ -7,6 +7,7 @@ import { List } from 'components';
 export default () => (
   <React.StrictMode>
     <Layout>
+      <button>Add Film</button>
       <Query query={getFilms}>
         {({ loading, error, data }) => {
           if (loading) return <p>Loading...</p>;

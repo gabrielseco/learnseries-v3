@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 import { media } from 'globals/styleUtils';
 
+export const HeaderVars = {
+  headerHeight: '3.125em'
+};
+
 export const Wrapper = styled.div`
   background: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  min-height: 3.125em;
+  min-height: ${HeaderVars.headerHeight};
   position: fixed;
   top: 0;
   width: 100%;
@@ -21,5 +25,5 @@ export const Container = styled.div`
   ${media.medium`
     padding-left: 2.5em;
     padding-right: 2.5em;
-  `}
+  `};
 `;

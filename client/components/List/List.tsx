@@ -1,13 +1,14 @@
 import React from 'react';
-import { IFilm } from '../../../shared/types';
 import { ListItem } from 'components';
+import { ListContainer } from './List.style';
+import { IFilm } from '../../../shared/types';
 
 const List: React.SFC<{ items: IFilm[] }> = ({ items }) => (
-  <ul>
+  <ListContainer>
     {items.map((film: IFilm) => (
       <ListItem item={film} />
     ))}
-  </ul>
+  </ListContainer>
 );
 
 export default List;
