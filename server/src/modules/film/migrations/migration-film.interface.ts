@@ -1,10 +1,10 @@
 export interface IMigrationFilm {
-  id: number;
+  id: string;
   nombre: string;
   overview?: string;
   imagen: string;
-  year: number;
-  idMovieDB?: number;
+  year: string;
+  idMovieDB?: string;
   color: string;
   createdAt: string;
   updatedAt: string;

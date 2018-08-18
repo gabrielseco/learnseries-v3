@@ -1,6 +1,6 @@
 import { Query, Resolver } from '@nestjs/graphql';
 
-import { IFilm } from './../../../shared/types';
+import { IFilm } from './../../../../shared/types';
 import { FilmService, FilmMigrationService } from './services';
 import { FilmMigration } from './migrations/main';
 import FilmsData from './data/film.data';

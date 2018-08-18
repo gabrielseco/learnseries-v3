@@ -2,7 +2,7 @@ import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import { GraphQLModule, GraphQLFactory } from '@nestjs/graphql';
 
-import { FilmModule } from './film/film.module';
+import { FilmModule } from './modules';
 
 @Module({
   imports: [FilmModule, GraphQLModule]

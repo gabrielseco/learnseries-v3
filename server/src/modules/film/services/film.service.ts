@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { Repository } from 'typeorm';
-import { IFilm } from './../../../../shared/types';
-import { Constants } from '../../constants';
+import { IFilm } from './../../../../../shared/types';
+import { Constants } from '../../../constants';
 import { Film } from './../entities/film.entity';
 
 @Injectable()

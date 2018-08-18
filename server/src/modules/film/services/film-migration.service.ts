@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
-import { Constants } from '../../constants';
+import { Constants } from '../../../constants';
 import { Film } from './../entities/film.entity';
 import { MigrationFilm } from './../migrations/migration-film.model';
 

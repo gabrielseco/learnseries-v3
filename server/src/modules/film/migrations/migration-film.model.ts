@@ -1,5 +1,5 @@
 import { IMigrationFilm } from './migration-film.interface';
-import { IFilm } from '../../../../shared/types';
+import { IFilm } from '../../../../../shared/types';
 
 export class MigrationFilm implements IFilm {
   id: number;
@@ -13,16 +13,18 @@ export class MigrationFilm implements IFilm {
   updatedAt: string;
 
   constructor(migrationFilm: IMigrationFilm) {
-    this.id = migrationFilm.id;
+    this.id = parseInt(migrationFilm.id, 10);
     this.name = migrationFilm.nombre;
     this.overview =
       migrationFilm.overview === '' ? undefined : migrationFilm.overview;
     this.artwork = migrationFilm.imagen;
-    this.year = migrationFilm.year;
+    this.year = parseInt(migrationFilm.year, 10);
     this.idMovieDB =
-      migrationFilm.idMovieDB === 0 ? undefined : migrationFilm.idMovieDB;
+      parseInt(migrationFilm.idMovieDB, 10) === 0
+        ? undefined
+        : parseInt(migrationFilm.idMovieDB, 10);
     this.colour =
-      migrationFilm.color !== 'NULL' ? '#' + migrationFilm.color : undefined;
+      migrationFilm.color !== null ? '#' + migrationFilm.color : undefined;
     this.createdAt = migrationFilm.createdAt;
     this.updatedAt = migrationFilm.updatedAt;
   }
